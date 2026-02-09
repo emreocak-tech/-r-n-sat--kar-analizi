@@ -1,4 +1,4 @@
-# -r-n-sat--kar-analizi
+# ürün-satış-kar-analizi
 Dynamic product sales simulation with profit analysis, category comparison, and data visualization using Python (OOP + Matplotlib + Faker).
 🛍️ Dynamic Product Sales & Profit Simulation
 Bu proje, rastgele oluşturulan ürün verileri üzerinden satış, gelir, maliyet ve kâr analizi yapan dinamik ve kullanıcı etkileşimli bir simülasyondur. Python programlama dili kullanılarak nesne yönelimli yapıda geliştirilmiştir.
