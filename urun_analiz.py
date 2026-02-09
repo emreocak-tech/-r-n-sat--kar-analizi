@@ -86,7 +86,7 @@ class System:
     def csv_çevirme(self):
         self.df.to_csv("ürün_bilgisi.csv",index=False,encoding="utf-8-sig")
         print("Kaydetme İşlemi Başarılı!")
-    def komik_fonksiyon(self):
+    def fonksiyon(self):
         def tavsiye_ver(row):
             kar_marjı=row["Kar Marjı"]
             satış_adedi=row["Satış Adedi"]
