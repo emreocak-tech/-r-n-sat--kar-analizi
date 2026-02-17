@@ -1,74 +1,79 @@
-# ürün-satış-kar-analizi
-Dynamic product sales simulation with profit analysis, category comparison, and data visualization using Python (OOP + Matplotlib + Faker).
-🛍️ Dynamic Product Sales & Profit Simulation
-Bu proje, rastgele oluşturulan ürün verileri üzerinden satış, gelir, maliyet ve kâr analizi yapan dinamik ve kullanıcı etkileşimli bir simülasyondur. Python programlama dili kullanılarak nesne yönelimli yapıda geliştirilmiştir.
+📦 Dinamik Ürün Satış ve Kâr Simülasyonu
+Bu Python projesi, rastgele oluşturulan ürün verileri üzerinden satış, maliyet, kâr ve kâr marjı analizi yapmanızı sağlar. Kullanıcıdan alınan ürün sayısına göre sahte veri üretilir ve bu veriler üzerinden çeşitli analizler, grafikler ve raporlamalar yapılır.
 
 🚀 Özellikler
-🧠 Rastgele Veri Üretimi – Ürün adı, fiyat, adet, kategori vb. sahte veriler Faker kütüphanesi ile otomatik oluşturulur.
+Rastgele ürün isimleri (Faker kütüphanesi ile)
 
-📊 Detaylı Analiz –
+Kategori bazlı ürün atama
 
-Toplam gelir/gider/kâr hesaplamaları
+Birim fiyat ve satış adedine göre maliyet, gelir, gider, kâr ve kâr marjı hesaplama
 
-Kâr marjı değerlendirmesi
+Kullanıcı dostu menü sistemi
 
-Ürün performans analizi
+Grafiksel analizler (çubuk grafik, histogram, scatter, pie chart)
 
-📈 Grafiksel Raporlama
+İleri düzey analiz (yoğunluk eğrisi ile histogram)
 
-Histogram + KDE (kar dağılımı)
+Tavsiye sistemi: Ürünlerin kâr marjı ve satış adedine göre ürün durumu önerisi
 
-Kategori bazlı ortalama gelir grafiği
+CSV formatında veri dışa aktarma
 
-Kâr marjına göre pasta grafiği
+Hata loglama sistemi
 
-Fiyat vs Kâr scatter plot analizi
+🛠️ Kullanılan Kütüphaneler
+datetime
 
-🧼 Fonksiyonel ve Modüler Yapı – Kodların %80’i fonksiyonlar ve sınıflar içerisinde.
+matplotlib
 
-📥 CSV çıktısı oluşturma – Ürün verilerini dışa aktarabilirsiniz.
-
-⚠️ Loglama sistemi – Hatalar hata_dosyam.txt dosyasına otomatik kaydedilir.
-
-🤖 Tavsiye Sistemi – Ürünlerin satıştan kaldırılması/raflarda kalması önerilir.
-
-
-📦 Kullanılan Kütüphaneler
 pandas
 
 numpy
 
-matplotlib
-
-scipy.stats
+scipy
 
 faker
 
-datetime
+📂 Dosya Yapısı
+product_sales_analysis.py – Ana program dosyası
 
+hata_dosyam.txt – Hataların loglandığı dosya
 
-Ana Menü:
-Veri üretimi ve analiz
+ürün_bilgisi.csv – Dışa aktarılan veri dosyası
 
-Grafiklerle raporlama
+📌 Kullanım
+Program çalıştırıldığında aşağıdaki menü karşınıza gelir:
 
-Ürün durumu hakkında öneri
+text
+Yapabilecekleriniz:
+1=Analiz Yapabilme
+2=Grafik Çizme
+3=Ürünlerin Durumu Hakkında Tavsiye Alma
+4=Veriyi csv Formatına Çevirme
+5=Sistemden Çıkış
+Her işlem öncesi kaç ürünle çalışmak istediğiniz sorulur. Ardından seçtiğiniz işleme göre analizler yapılır ve sonuçlar ekrana yansıtılır.
 
-CSV formatında dışa aktarım
+📊 Grafik Türleri
+Kategori bazlı ortalama gelir (Bar chart)
 
-Çıkış
+İleri düzey analiz (Histogram + yoğunluk eğrisi)
 
+Birim fiyat – kâr ilişkisi (Scatter plot)
 
+En iyi 5 ürünün kâr marjına göre pasta grafiği
 
- Örnek Çıktılar
-Toplam Gelir: 1.200.000 ₺  
-Toplam Gider: 900.000 ₺  
-En yüksek kâr marjı: "Wireless Mouse", %72.5  
-Tavsiye: Ürün incelenmeye devam edilsin!
+📝 Tavsiye Sistemi
+Kâr marjı ve satış adedi kriterlerine göre ürünler için aşağıdaki tavsiyeler üretilir:
 
+Satıştan Kaldırılsın
 
+Ürün Rafta Kalabilir
 
+Ürün incelenmeye devam edilsin
 
-✍️ Geliştirici
-Emre Ocak
-Python ile veri analizi, görselleştirme ve uygulama geliştirme alanlarında çalışıyorum
+🧪 Örnek Çıktı
+text
+En yüksek kar marjına sahip ürün : ['Awesome Wooden Clock'] , kar marj oranı : [92.5]
+Toplam Gelir : 2456000 ₺
+Toplam Gider : 1345000
+⚠️ Hata Yönetimi
+Yanlış veri girişlerinde hata mesajı gösterilir ve bu hatalar hata_dosyam.txt dosyasına kaydedilir.
